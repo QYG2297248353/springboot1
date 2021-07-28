@@ -11,14 +11,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HelloController {
 	
 	@RequestMapping("/hello")
-	public String hello(Model m) throws Exception {
+	public String hello(Model m) {
 		m.addAttribute("now", DateFormat.getDateTimeInstance().format(new Date()));
 		System.out.println("热部署测试");
 		
 //		统一处理错误
-		if (true) {
-			throw new Exception("some exception");
-		}
+//		if (true) {
+//			throw new Exception("some exception");
+//		}
 		
 		return "hello";
 	}
