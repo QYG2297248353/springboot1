@@ -8,11 +8,6 @@ spring:
   username: root
   password: 
   driver-class-name: com.mysql.jdbc.Driver
- jpa:
-  properties:
-   hibernate:
-    hbm2ddl:
-     auto: update
 server:
  port: 8888
  context-path: /test

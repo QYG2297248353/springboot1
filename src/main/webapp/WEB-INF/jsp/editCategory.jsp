@@ -5,8 +5,8 @@
 
 	<form action="updateCategory" method="post">
 
-		name: <input name="name" value="${c.name}"> <br> 
-		<input name="id" type="hidden" value="${c.id}">
+		name: <input name="name" value="${c.name}"> <br> <input
+			name="id" type="hidden" value="${c.id}">
 		<button type="submit">提交</button>
 
 	</form>
